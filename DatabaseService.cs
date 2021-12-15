@@ -18,7 +18,7 @@ namespace Auth.ADExport
 
         public void Export(List<ADUser> users)
         {
-            using var connection = new SqlConnection(CreateConnectionString("10.240.8.34", "AUTH", "HasanovAZ", "xzW!HYu#Xz"));
+            using var connection = new SqlConnection(CreateConnectionString("<IP>", "<Catalog>", "<User name>", "<password>"));
             connection.Open();
             try
             {
